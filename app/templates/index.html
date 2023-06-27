@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa de Perú</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/map.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/leaflet.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/barra.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    
+    <script src="{{ url_for('static', filename='js/leaflet.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div>
+        <div class="contenedor-navs">
+            <nav class="logo">
+                <a href="#"><img src="{{ url_for('static', filename='images/Binacional.png') }}" alt="Logo"></a>
+            </nav>
+            <nav class="barra">
+                <a href="#">Soporte</a>
+                <a href="#">Idioma</a>
+                <a href="#">Iniciar sesión</a>
+            </nav>
+        </div>
+    </div>
+    <div id="map"></div>
+
+
+</body>
+</html>
